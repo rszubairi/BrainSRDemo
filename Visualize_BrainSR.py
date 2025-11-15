@@ -109,7 +109,7 @@ def lower_res_add_noise(image, noise_magnitude = 0.0, blue_magnitude = 0.0):
     return zoom(convert_uint8(low_res), (lw_x/low_res.shape[0], lw_x/low_res.shape[1], 1))
 
 # Add a sidebar with a logo
-logo_path = "logo.jpg"  # Replace with your logo image file path
+logo_path = "Logo-Black.png"  # Replace with your logo image file path
 st.sidebar.image(logo_path, use_column_width=False, width=150)
 st.sidebar.write("## **BrainSR V1.0.3 FROM Pixellence**")
 st.sidebar.write("This is the DICOM Image Viewer. You can adjust the sliders and upload a DICOM file to view the noisy and super-resolution images side by side.")
